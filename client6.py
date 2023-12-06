@@ -41,15 +41,12 @@ def getimgfromnao(imgname):
 	imageWidth = naoImage[0]
 	imageHeight = naoImage[1]
 	array = naoImage[6]
-
 	
 	# Create a PIL Image from our pixel array.
 	#print(type (face))
 	#print(face)
 
 	im = Image.frombytes("RGB", (imageWidth, imageHeight), array)
-
-
 
 	# Save the image.    
 	im.save(imgname, "PNG")
@@ -101,7 +98,6 @@ def rpsclient():
 
 def initialize():
 	pass
-
 	
 if __name__ == '__main__':
 	initialize()
