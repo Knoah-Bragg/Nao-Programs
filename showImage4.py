@@ -92,8 +92,6 @@ def showNaoImage(IP, PORT):
     print(im)
   k = cv2.waitKey(0) # Wait for a keystroke in the window
 
-  #im.show()
-
 if __name__ == '__main__':
   IP = "192.168.20.103"  # Replace here with your NaoQi's IP address.
   PORT = 9559
