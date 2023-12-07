@@ -1,6 +1,6 @@
 Nao-Programs:
 
-This is a compilation of programs used to communicate with Nao using a server on Python 3 and a client on Python 2.
+To play rock-paper-scissors you need a server on Python 3 and a client on Python 2.
 
 Using client6.py, server6.py, and the .png files, the program takes an image and attempts to play a round of rock-paper-scissors.
 To play run the server and client, then give a name for the image (it can be the same name for multiple rounds).
