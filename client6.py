@@ -24,7 +24,6 @@ def getimgfromnao(imgname):
 	t0 = time.time()
 
 	# Get a camera image.
-	# image[6] contains the image data passed as an array of ASCII chars.
 	naoImage = camProxy.getImageRemote(videoClient)
 
 	t1 = time.time()
@@ -41,10 +40,6 @@ def getimgfromnao(imgname):
 	imageWidth = naoImage[0]
 	imageHeight = naoImage[1]
 	array = naoImage[6]
-	
-	# Create a PIL Image from our pixel array.
-	#print(type (face))
-	#print(face)
 
 	im = Image.frombytes("RGB", (imageWidth, imageHeight), array)
 
@@ -89,7 +84,7 @@ def rpsclient():
 		print("4")
 
 		print data
-		choice=raw_input("Next image, yes or no")
+		choice=raw_input("Next image, yes or no: ")
 		if choice=="no":
 			break
 
@@ -98,6 +93,7 @@ def rpsclient():
 
 def initialize():
 	pass
+
 	
 if __name__ == '__main__':
 	initialize()
